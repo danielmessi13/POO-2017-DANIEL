@@ -1,0 +1,9 @@
+5) Tornando a classe abstrata tambem .
+
+6) Ela serve para ter a certeza que as outras classes implementem o metodo . Se tirarmos da mãe e deixarmos nas filhas, com o metodo implementado , o codigo compilara;
+
+7) Pode.
+
+// Desafios
+
+1) Porque um vetor de Contas não obrigatoriamente vai receber Contas e sim receber ContaPoupanca e ContaCorrentes.
