@@ -1,0 +1,7 @@
+1) Não podemos instanciar classes abstratas, pois ela serve apenas como um pré-projeto, para as outras classes filhas, com o uso de polimorfismo e herança dos atributos e métodos.
+
+2) Para que a classe concreta compile de forma correta temos que implementar o metodo "imprimaAlgo()".
+
+3) Ocorre um erro na classe, no qual ela pede, ou pra ser implementado o metodo, ou tornar a classe concreta em abstrata.
+
+7) Pois fazendo um vetor de FiguraGeometrica, vamos e podemos receber objetos filhos da classe FiguraGeometrica, ou seja, do tipo Quadrado e Triangulos.
