@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wesleybrandolee.bibliotech.app.MainActivity"
+    android:background="#0097A7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_livros"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_add"
+                    app:layout_anchorGravity="bottom|right|end"
+                    android:onClick="novoLivro" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity="start" >
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

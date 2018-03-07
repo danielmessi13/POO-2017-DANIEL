@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0097A7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="com.example.wesleybrandolee.bibliotech.app.AdicionarLivrosActivity"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/titulo"
+                android:inputType="textCapSentences"
+                android:hint="@string/titulo"
+                android:textSize="16sp"
+                android:maxLength="30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/autor"
+                android:inputType="textCapWords"
+                android:hint="@string/autor"
+                android:maxLength="20"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ano"
+                android:hint="@string/ano"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/genero"
+                android:inputType="textCapWords"
+                android:hint="@string/g_nero"
+                android:textSize="16sp"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                android:hint="@string/inicio_da_leitura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_weight="2"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:id="@+id/edit_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date"
+                android:onClick="showDate" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                android:hint="@string/fim_da_leitura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_weight="2"
+                android:layout_marginTop="13dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:id="@+id/edit_data_fim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date"
+                android:onClick="showDateFim" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_weight="4"
+                android:hint="@string/paginas"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/pagina_atual"
+                android:layout_weight="3"
+                android:layout_marginTop="4dp"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/atual"
+                android:textSize="16sp"
+                android:maxLength="4"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="170dp"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:text="@string/barra"/>
+
+            <EditText
+                android:id="@+id/paginas"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:hint="@string/fim"
+                android:inputType="number"
+                android:maxLength="4"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:id="@+id/switch_tag"
+                android:layout_marginTop="4dp"
+                android:layout_width="270dp"
+                android:onClick="show_tag"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:hint="TAG"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linear_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/tag"
+                    android:animateLayoutChanges="true"
+                    android:textSize="16sp"
+                    android:inputType="textCapWords"
+                    android:hint="@string/tag_opcional"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/lido"
+                android:text="Lido"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/lendo"
+                android:text="Lendo"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/parado"
+                android:text="Parado"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/desejo_ler"
+                android:text="Deseja ler"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <RatingBar
+
+            android:visibility="invisible"
+            android:isIndicator="false"
+            android:layout_gravity="center"
+            android:id="@+id/cadastro_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="@color/background"
+            android:onClick="concluir"
+            android:text="@string/concluir" />
+
+    </LinearLayout>
+</ScrollView>
+

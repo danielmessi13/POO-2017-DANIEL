@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grupo_drawer"
+        android:checkableBehavior="single" >
+
+        <item
+            android:checkable="true"
+            android:id="@+id/menu_todos"
+            android:title="Todos"
+            android:icon="@drawable/ic_menu_livro" />
+        <item
+            android:id="@+id/menu_desejo"
+            android:title="Desejo ler"
+            android:icon="@drawable/ic_deseja"/>
+        <item
+            android:id="@+id/menu_lendo"
+            android:title="Lendo"
+            android:icon="@drawable/ic_lendo"/>
+        <item
+            android:id="@+id/menu_lido"
+            android:title="Lidos"
+            android:icon="@drawable/ic_lidos"/>
+        <item
+            android:id="@+id/menu_parados"
+            android:title="Parados"
+            android:icon="@drawable/ic_parados"/>
+    </group>
+
+    <item android:title="Ferramentas">
+        <menu>
+
+            <item
+                android:id="@+id/menu_sair"
+                android:icon="@drawable/ic_logout"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

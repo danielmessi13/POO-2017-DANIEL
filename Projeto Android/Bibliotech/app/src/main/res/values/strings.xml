@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Bibliotech</string>
+    <string name="livros_img">livros_img</string>
+    <string name="bem_vindo_bibliotech">Bem vindo à Bibliotech!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="autor">Autor</string>
+    <string name="ano">Ano</string>
+    <string name="g_nero">Gênero</string>
+    <string name="titulo">Titulo</string>
+    <string name="tag_opcional">Tag (Opcional)</string>
+    <string name="qtd_pag">Quantidade de páginas</string>
+    <string name="concluir">Concluir</string>
+    <string name="data_de_inicio">Data de inicio</string>
+    <string name="excluir">Excluir</string>
+    <string name="editar">Editar</string>
+    <string name="entrar">Entrar</string>
+    <string name="pegar_senha">Digite sua senha</string>
+    <string name="metodo_de_login">Digite seu e-mail ou apelido</string>
+    <string name="nao_tem_conta">Não tem conta?</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="foto">Foto:</string>
+    <string name="pagina_atual">Pagina atual</string>
+    <string name="inicio_da_leitura">Inicio da leitura:</string>
+    <string name="fim">Fim</string>
+    <string name="barra">/</string>
+    <string name="atual">Atual</string>
+    <string name="paginas">Paginas:</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search_hint">Procure pela tag!</string>
+    <string name="fim_da_leitura">Fim da leitura:</string>
+    <string name="inicio_termino">Inicio / Termino:</string>
+    <string name="pagina_atual_pagina_final">Pagina atual / Pagina final:</string>
+    <string name="genero">Genero:</string>
+    <string name="estado">Estado:</string>
+
+
+</resources>
