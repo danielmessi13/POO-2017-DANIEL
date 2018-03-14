@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ifpi.edu.br.segundaquesto.CalculaActivity">
+
+    <EditText
+        android:id="@+id/peso_um"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso da nota 1"/>
+
+    <EditText
+
+        android:id="@+id/peso_dois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso da nota 2"/>
+
+
+    <Button
+        android:onClick="calcular"
+        android:text="Calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="cancelar"
+        android:onClick="cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

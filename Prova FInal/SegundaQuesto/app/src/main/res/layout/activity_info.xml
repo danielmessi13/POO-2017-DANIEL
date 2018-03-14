@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ifpi.edu.br.segundaquesto.InfoActivity">
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/nota_um"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1"/>
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/nota_dois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2"/>
+
+    <Button
+        android:onClick="calcularMedia"
+        android:text="Calcular Média"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

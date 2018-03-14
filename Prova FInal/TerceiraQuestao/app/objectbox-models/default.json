@@ -1,0 +1,67 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6637048168327502289",
+      "lastPropertyId": "6:7458301082142958269",
+      "name": "Tarefa",
+      "properties": [
+        {
+          "id": "1:1461519088786518832",
+          "name": "id"
+        },
+        {
+          "id": "2:593338848171727210",
+          "name": "titulo"
+        },
+        {
+          "id": "3:1500614943415317750",
+          "name": "descricao"
+        },
+        {
+          "id": "4:2802634884287532971",
+          "name": "data"
+        },
+        {
+          "id": "5:1203055143649600970",
+          "name": "estado"
+        },
+        {
+          "id": "6:7458301082142958269",
+          "indexId": "1:7550225785673325734",
+          "name": "donoId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:6860215340978219593",
+      "lastPropertyId": "2:4311926758796183216",
+      "name": "Usuario",
+      "properties": [
+        {
+          "id": "1:8769878185293687105",
+          "name": "id"
+        },
+        {
+          "id": "2:4311926758796183216",
+          "name": "nome"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:6860215340978219593",
+  "lastIndexId": "1:7550225785673325734",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

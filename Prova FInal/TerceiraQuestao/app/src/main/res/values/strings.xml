@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TerceiraQuestao</string>
+    <string name="terminar">Terminar</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="fazendo">Fazendo</string>
+    <string name="excluir">Excluir</string>
+</resources>
